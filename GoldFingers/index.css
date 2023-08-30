@@ -111,6 +111,33 @@ ion-icon {
     height: 100%;
 }
 
+.institute {
+    background-image: url("./images/salon.jpg");
+    background-size: cover;
+    min-height: 400px;
+}
+
+.outline-flowers {
+    background-image: url("./images/blue-flowers.png");
+    background-size: none;
+}
+
+.hands-flowers {
+    background-image: url("./images/hands-flowers.jpg");
+    background-size: cover;
+    min-height: 120px;
+    padding: 2rem;
+}
+
+.hands-flowers h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--font-tertiary-color);
+    font-weight: 200;
+    font-style: italic;
+    font-size: 2rem;
+    margin: 0;
+}
+
 .price-list {
     padding: 1rem;
 }
@@ -190,7 +217,7 @@ b.customer-name {
 }
 
 .checked {
-    color: var(--theme-primary-color);
+    color: #c6e2e8;
 }
 
 footer {
@@ -213,8 +240,8 @@ footer {
         
     .visit { grid-area: 1 / 1 / 2 / 3; }
     .institute { grid-area: 3 / 1 / 4 / 2; }
-    .nails { grid-area: 3 / 2 / 4 / 3; }
-    .makeup { grid-area: 4 / 1 / 5 / 2; }
+    .outline-flowers { grid-area: 3 / 2 / 4 / 3; }
+    .hands-flowers { grid-area: 4 / 1 / 5 / 2; }
     .epilating { grid-area: 4 / 2 / 5 / 3; }
     .products { grid-area: 5 / 1 / 6 / 3; }
     .description { grid-area: 6 / 1 / 7 / 3; }
@@ -250,9 +277,8 @@ footer {
 
     .visit { grid-area: 1 / 1 / 2 / 13; }
     .institute { grid-area: 2 / 1 / 4 / 5; }
-    .nails { grid-area: 2 / 5 / 3 / 13; }
-    .makeup { grid-area: 3 / 5 / 4 / 9; }
-    .epilating { grid-area: 3 / 9 / 4 / 13; }
+    .outline-flowers { grid-area: 2 / 5 / 3 / 13; }
+    .hands-flowers { grid-area: 3 / 5 / 4 / 13; }
     .skin-care { grid-area: 4 / 1 / 5 / 7; }
     .body-epilation { grid-area: 4 / 7 / 5 / 13; }
     .products { grid-area: 5 / 1 / 6 / 5; }
