@@ -1,0 +1,277 @@
+:root {
+    --font-primary-color: #2e2e2e;
+    --font-secondary-color: #7e7e7e;
+    --font-tertiary-color: #fff;
+    --font-footer-color: #c2c2c2;
+    --font-shadow-color: #35271713;
+    --page-background-color: #f5f5f7;
+    --card-background-color: #ffffff;
+    --card-shadow-color: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    --border-color: #424242;
+    --theme-primary-color: rgb(196, 246, 253);
+    --theme-secondary-color: #f1c3eb;
+    --page-max-width: 1200px;
+    --signing-max-width: 340px;
+}
+
+body {
+    font-size: 16px;
+    color: var(--font-primary-color);
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--page-background-color);
+    margin: 0;
+}
+
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    flex: 1;
+    max-width: var(--page-max-width);
+    margin: 0 1rem;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: var(--card-shadow-color);
+    background-color: var(--card-background-color);
+    margin-top: 2rem;
+}
+
+.visit {
+    width: auto;
+    background-image: url("./images/blue-nails.jpg");
+    background-size: cover;
+    padding: 2.5rem;
+}
+
+.message {
+    width: 50%;
+    color: var(--font-tertiary-color);
+    text-shadow: 0 0 10px var(--font-shadow-color);
+}
+
+.brand {
+    margin-top: -10px;
+}
+
+.brand .title {
+    font-size: 2.3rem;
+    font-family: 'Michroma', sans-serif;
+    margin: 0;
+}
+
+.brand .subtitle {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.welcome {
+    font-family: 'Playfair Display', serif;
+    margin-top: 2rem;
+}
+
+.welcome .title {
+    font-size: 6.5rem;
+    line-height: 116px;
+    margin: 0;
+}
+
+.welcome .subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: italic;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.address {
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.9rem;
+}
+
+.address .details {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-auto-rows: 32px;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+ion-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.price-list {
+    padding: 1rem;
+}
+
+.price-list.card {
+    width: auto;
+}
+
+.price-list-title {
+    padding: .5rem;
+    margin: .5rem;
+}
+
+ul.price-list-items {
+    padding: 0;
+    margin: 1rem;
+    overflow-x: hidden;
+    list-style: none
+}
+
+ul.price-list-items li {
+    padding: 0.5em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+h4 {
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+    margin: 1rem;
+    color: var(--theme-secondary-color);
+}
+
+.products img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-background-color);
+    padding: 2rem;
+    text-shadow: 0 0 10px var(--font-shadow-color);
+}
+
+.description.card {
+    color: #fff;
+    background: rgb(194,227,232);
+    background: -moz-linear-gradient(180deg, rgb(198, 233, 238) 0%, rgba(220,199,218,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgb(198, 233, 238) 0%, rgba(220,199,218,1) 100%);
+    background: linear-gradient(180deg, rgb(198, 233, 238) 0%, rgba(220,199,218,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c2e3e8",endColorstr="#dcc7da",GradientType=1);
+}
+
+.description.card p:first-child {
+    margin-top: 0;
+}
+
+.description .greetings img {
+    max-width: var(--signing-max-width);
+    object-fit: contain;
+    width: 100%;
+}
+
+.review {
+    padding: 2rem;
+}
+
+.review-comment {
+    margin-top: .5rem;
+}
+
+b.customer-name {
+    color: var(--font-secondary-color);
+}
+
+.checked {
+    color: var(--theme-primary-color);
+}
+
+footer {
+    color: var(--font-footer-color);
+    padding: 0 .7rem;
+    margin: 1rem 0;
+}
+
+.wrapper {
+    display: inline-grid;
+}
+
+@media screen and (min-width: 624px) and (max-width: 1024px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+        
+    .visit { grid-area: 1 / 1 / 2 / 3; }
+    .institute { grid-area: 3 / 1 / 4 / 2; }
+    .nails { grid-area: 3 / 2 / 4 / 3; }
+    .makeup { grid-area: 4 / 1 / 5 / 2; }
+    .epilating { grid-area: 4 / 2 / 5 / 3; }
+    .products { grid-area: 5 / 1 / 6 / 3; }
+    .description { grid-area: 6 / 1 / 7 / 3; }
+    .skin-care { grid-area: 7 / 1 / 8 / 3; }
+    .body-epilation { grid-area: 8 / 1 / 9 / 3; }
+    .manicure { grid-area: 9 / 1 / 10 / 3; }
+    .lea { grid-area: 10 / 1 / 11 / 2; }
+    .sarah { grid-area: 10 / 2 / 11 / 3; }
+    .phillipe { grid-area: 11 / 1 / 12 / 2; }
+    .astrid { grid-area: 11 / 2 / 12 / 3; }
+    .card { margin-top: 0; }
+
+    .address {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        gap: 2rem;
+    }
+
+    .description .greetings {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .visit { grid-area: 1 / 1 / 2 / 13; }
+    .institute { grid-area: 2 / 1 / 4 / 5; }
+    .nails { grid-area: 2 / 5 / 3 / 13; }
+    .makeup { grid-area: 3 / 5 / 4 / 9; }
+    .epilating { grid-area: 3 / 9 / 4 / 13; }
+    .skin-care { grid-area: 4 / 1 / 5 / 7; }
+    .body-epilation { grid-area: 4 / 7 / 5 / 13; }
+    .products { grid-area: 5 / 1 / 6 / 5; }
+    .description { grid-area: 5 / 5 / 6 / 13; }
+    .lea { grid-area: 6 / 1 / 7 / 4; }
+    .sarah { grid-area: 6 / 4 / 7 / 7; }
+    .phillipe { grid-area: 6 / 7 / 7 / 10; }
+    .astrid { grid-area: 6 / 10 / 7 / 13; }
+    .card { margin-top: 0; }
+
+    .address {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        gap: 2rem;
+    }
+
+    .description .greetings {
+        display: flex;
+        justify-content: space-between;
+    }
+}
