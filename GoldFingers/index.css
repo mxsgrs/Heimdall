@@ -184,12 +184,12 @@ ul.items li {
     display: flex;
     flex-direction: column;
     background-image: url("./images/blue-background.jpg");
-    color: var(--font-tertiary-color);
+    color: #6b8e94;
     padding: 2rem;
 }
 
 .description b {
-    color: var(--font-tertiary-color);
+    color: #6b8e94;
 }
 
 .description.card p:first-child {
