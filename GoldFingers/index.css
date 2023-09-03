@@ -76,7 +76,7 @@ main {
 }
 
 .welcome .title {
-    font-size: 6.5rem;
+    font-size: 6.2rem;
     line-height: 116px;
     margin: 0;
 }
@@ -111,13 +111,13 @@ main {
 .address .details:last-child {
     display: flex;
     justify-content: space-between;
+    min-height: 32px;
 }
 
 ion-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
     margin: 0 auto;
 }
 
@@ -174,7 +174,7 @@ ion-icon {
 .products {
     background-image: url("./images/nails-polish.jpg");
     background-size: cover;
-    min-height: 500px;
+    min-height: 400px;
 }
 
 .price-list {
@@ -283,6 +283,10 @@ footer {
         padding: 2.5rem;
     }
 
+    .welcome .title {
+        font-size: 6.5rem;
+    }
+
     .address {
         display: grid;
         grid-template-columns: auto 1fr;
@@ -327,11 +331,16 @@ footer {
     .card { margin-top: 0; }
 
     .visit {
+        background-image: url("./images/blue-nails.jpg");
         padding: 2.5rem;
     }
 
     .message {
         width: 50%;
+    }
+
+    .welcome .title {
+        font-size: 6.5rem;
     }
 
     .address {
