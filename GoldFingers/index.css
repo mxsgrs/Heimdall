@@ -39,18 +39,17 @@ main {
     border-radius: 16px;
     box-shadow: var(--card-shadow-color);
     background-color: var(--card-background-color);
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .visit {
     width: auto;
     background-image: url("./images/blue-nails.jpg");
     background-size: cover;
-    padding: 2.5rem;
+    padding: 1.5rem;
 }
 
 .message {
-    width: 50%;
     color: var(--font-tertiary-color);
     text-shadow: 0 0 10px var(--font-shadow-color);
 }
@@ -108,6 +107,11 @@ main {
     text-decoration: none;
 }
 
+.address .details:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
 ion-icon {
     display: flex;
     align-items: center;
@@ -124,6 +128,7 @@ ion-icon {
 .outline-flowers {
     background-image: url("./images/blue-flowers.png");
     background-size: none;
+    min-height: 100px;
 }
 
 .hands-flowers {
@@ -167,6 +172,7 @@ ion-icon {
 .products {
     background-image: url("./images/nails-polish.jpg");
     background-size: cover;
+    min-height: 500px;
 }
 
 .price-list {
@@ -249,6 +255,53 @@ footer {
     display: inline-grid;
 }
 
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .visit { grid-area: 1 / 1 / 2 / 13; }
+    .institute { grid-area: 2 / 1 / 3 / 7; }
+    .outline-flowers { display: none; }
+    .hands-flowers { grid-area: 2 / 7 / 3 / 13; }
+    .products { grid-area: 4 / 1 / 5 / 13; }
+    .description { grid-area: 3 / 1 / 4 / 13; }
+    .manicure { grid-area: 5 / 1 / 6 / 7; }
+    .pedicure { grid-area: 5 / 7 / 6 / 13; }
+    .lea { grid-area: 6 / 1 / 7 / 7; }
+    .sarah { grid-area: 7 / 1 / 8 / 7; }
+    .phillipe { grid-area: 6 / 7 / 7 / 13; }
+    .astrid { grid-area: 7 / 7 / 8 / 13; }
+    .card { margin-top: 0; }
+
+    .visit {
+        padding: 2.5rem;
+    }
+
+    .address {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        gap: 2rem;
+    }
+
+    .address .details:last-child {
+        display: inherit;
+    }
+
+    .products {
+        background-image: url("./images/nails-polish-tablet.jpg");
+    }
+
+    .description .greetings {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .wrapper {
         display: grid;
@@ -271,11 +324,23 @@ footer {
     .astrid { grid-area: 6 / 10 / 7 / 13; }
     .card { margin-top: 0; }
 
+    .visit {
+        padding: 2.5rem;
+    }
+
+    .message {
+        width: 50%;
+    }
+
     .address {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-auto-rows: minmax(100px, auto);
         gap: 2rem;
+    }
+
+    .address .details:last-child {
+        display: inherit;
     }
 
     .description .greetings {
