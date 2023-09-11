@@ -6,9 +6,9 @@
     --font-shadow-color: #3527170c;
     --page-background-color: #f5f5f7;
     --card-background-color: #ffffff;
-    --card-shadow-color: rgba(99, 99, 99, 0.096) 0px 2px 8px 0px;
+    --card-shadow-color: #63636318 0px 2px 8px 0px;
     --border-color: #424242;
-    --theme-primary-color: rgb(196, 246, 253);
+    --theme-primary-color: #c4f6fd;
     --theme-secondary-color: #f1c3eb;
     --page-max-width: 1200px;
     --signing-max-width: 340px;
@@ -19,6 +19,7 @@ body {
     color: var(--font-primary-color);
     font-family: 'Montserrat', sans-serif;
     background-color: var(--page-background-color);
+    -webkit-text-size-adjust: none;
     margin: 0;
 }
 
@@ -82,7 +83,7 @@ main {
 }
 
 .welcome .subtitle {
-    color: rgb(208, 236, 245);
+    color: #d0ecf5;
     font-size: 2rem;
     font-weight: 200;
     font-style: italic;
@@ -91,7 +92,7 @@ main {
 }
 
 .address {
-    color: rgb(199, 231, 241);
+    color: #c7e7f1;
     font-size: 1.2rem;
     font-weight: normal;
     line-height: 1.9rem;
@@ -181,12 +182,12 @@ ion-icon {
 }
 
 .price-list.manicure {
-    color: rgb(199, 231, 241);
+    color: #c7e7f1;
     background-color: #87b9c2;
 }
 
 .price-list.pedicure {
-    color: rgb(199, 231, 241);
+    color: #c7e7f1;
     background-color: #8bb2b9;
     text-shadow: 0 0 10px var(--font-shadow-color);
 }
