@@ -150,7 +150,7 @@ ion-icon {
     margin: 0;
 }
 
-.description {
+.shop-description {
     display: flex;
     flex-direction: column;
     background-image: url("./images/blue-background.jpg");
@@ -158,19 +158,15 @@ ion-icon {
     padding: 2rem;
 }
 
-.description p {
-    font-size: 1rem;
-}
-
-.description b {
+.shop-description b {
     color: #6b8e94;
 }
 
-.description.card p:first-child {
+.shop-description.card p:first-child {
     margin-top: 0;
 }
 
-.description .greetings img {
+.shop-description .greetings img {
     max-width: var(--signing-max-width);
     object-fit: contain;
     width: 100%;
@@ -274,7 +270,7 @@ footer {
     .institute { grid-area: 2 / 1 / 3 / 7; }
     .hands-flowers { grid-area: 2 / 7 / 3 / 13; }
     .products { grid-area: 4 / 1 / 5 / 13; }
-    .description { grid-area: 3 / 1 / 4 / 13; }
+    .shop-description { grid-area: 3 / 1 / 4 / 13; }
     .manicure { grid-area: 5 / 1 / 6 / 7; }
     .pedicure { grid-area: 5 / 7 / 6 / 13; }
     .lea { grid-area: 6 / 1 / 7 / 7; }
@@ -306,7 +302,7 @@ footer {
         background-image: url("./images/nails-polish-tablet.jpg");
     }
 
-    .description .greetings {
+    .shop-description .greetings {
         display: flex;
         justify-content: space-between;
     }
@@ -325,7 +321,7 @@ footer {
     .outline-flowers { grid-area: 2 / 5 / 3 / 13; display: initial; }
     .hands-flowers { grid-area: 3 / 5 / 4 / 13; }
     .products { grid-area: 4 / 1 / 5 / 5; }
-    .description { grid-area: 4 / 5 / 5 / 13; }
+    .shop-description { grid-area: 4 / 5 / 5 / 13; }
     .manicure { grid-area: 5 / 1 / 6 / 7; }
     .pedicure { grid-area: 5 / 7 / 6 / 13; }
     .lea { grid-area: 6 / 1 / 7 / 4; }
@@ -358,7 +354,7 @@ footer {
         display: inherit;
     }
 
-    .description .greetings {
+    .shop-description .greetings {
         display: flex;
         justify-content: space-between;
     }
