@@ -2,10 +2,16 @@
     --font-primary-color: #2e2e2e;
     --font-secondary-color: #7e7e7e;
     --font-tertiary-color: #fff;
+    --font-quaternary-color: #c7e7f1;
+    --font-quinary-color: #6b8e94;
+    --font-senary-color: #d0ecf5;
+    --font-checked-color: #c6e2e8;
     --font-footer-color: #c2c2c2;
     --font-shadow-color: #3527170c;
     --page-background-color: #f5f5f7;
-    --card-background-color: #ffffff;
+    --card-primary-background-color: #ffffff;
+    --card-secondary-background-color: #87b9c2;
+    --card-tertiary-background-color: #8bb2b9;
     --card-shadow-color: #63636318 0px 2px 8px 0px;
     --border-color: #424242;
     --theme-primary-color: #c4f6fd;
@@ -83,7 +89,7 @@ main {
 }
 
 .welcome .subtitle {
-    color: #d0ecf5;
+    color: var(--font-senary-color);
     font-size: 2rem;
     font-weight: 200;
     font-style: italic;
@@ -92,7 +98,7 @@ main {
 }
 
 .address {
-    color: #c7e7f1;
+    color: var(--font-quaternary-color);
     font-size: 1.2rem;
     font-weight: normal;
     line-height: 1.9rem;
@@ -153,12 +159,12 @@ ion-icon {
 
 .shop-description {
     background-image: url("./images/blue-background.jpg");
-    color: #6b8e94;
+    color: var(--font-quinary-color);
     padding: 2rem;
 }
 
 .shop-description b {
-    color: #6b8e94;
+    color: var(--font-quinary-color);
 }
 
 .shop-description.card p:first-child {
@@ -182,13 +188,13 @@ ion-icon {
 }
 
 .price-list.manicure {
-    color: #c7e7f1;
-    background-color: #87b9c2;
+    color: var(--font-quaternary-color);
+    background-color: var(--card-secondary-background-color);
 }
 
 .price-list.pedicure {
-    color: #c7e7f1;
-    background-color: #8bb2b9;
+    color: var(--font-quaternary-color);
+    background-color: var(--card-tertiary-background-color);
     text-shadow: 0 0 10px var(--font-shadow-color);
 }
 
@@ -199,12 +205,8 @@ ion-icon {
     margin: 0;
 }
 
-.price-list.manicure .title {
-    color: #fff;
-}
-
-.price-list.pedicure .title {
-    color: #fff;
+.price-list .title {
+    color: var(--font-tertiary-color);
 }
 
 .price-list .subtitle {
@@ -244,7 +246,7 @@ b {
 }
 
 .checked {
-    color: #c6e2e8;
+    color: var(--font-checked-color);
 }
 
 footer {
